@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS worker (
+  id INT NOT NULL AUTO_INCREMENT,
+  worker_name VARCHAR(45) NOT NULL,
+  place_of_rent_id INT NOT NULL,
+  PRIMARY KEY (id))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
