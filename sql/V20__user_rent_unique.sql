@@ -1,0 +1,4 @@
+ALTER TABLE user_rent 
+ADD UNIQUE INDEX id_UNIQUE (id ASC) VISIBLE,
+ADD UNIQUE INDEX payment_id_UNIQUE (payment_id ASC) INVISIBLE,
+ADD UNIQUE INDEX lease_period_UNIQUE (lease_period_id ASC) VISIBLE;

@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS item (
   cost DOUBLE(10,2) NOT NULL,
   season ENUM("all", "summer", "winter") NOT NULL,
   is_used_now TINYINT(1) NOT NULL DEFAULT 0,
-  place_of_rent_id INT NOT NULL,
+  place_of_rent_id INT UNSIGNED NOT NULL,
   PRIMARY KEY (id))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
