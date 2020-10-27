@@ -17,4 +17,6 @@ JOIN `subject` AS sb ON sb.id = subject_id
 	WHERE st.id = 26 AND sb.name = ' Информатика';
 
 -- #5 Получить список оценок группы id=4
-SELECT grade FROM students_grade, `group` where `group`.id = 4;
+SELECT grade FROM students_grade
+JOIN student ON student.id = student_id
+	WHERE student.group_id = 4;
