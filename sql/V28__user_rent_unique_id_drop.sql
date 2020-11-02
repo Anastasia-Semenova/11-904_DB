@@ -1,0 +1,1 @@
+ALTER TABLE user_rent DROP INDEX id_UNIQUE;
