@@ -15,3 +15,7 @@ select company.id, company_name,  count(user_rent.id) from user_rent
 left join place_of_rent on place_of_rent_id=place_of_rent.id
 left join company on company_id=company.id
 group by company.id;
+
+-- 4. Максимальный срок аренды, минимальный срок аренды, средний срок аренды
+select max(end_time - start_time) as max_lease_petiod, min(end_time - start_time) as min_lease_petiod, avg(end_time - start_time) as avg_lease_petiod from user_rent
+left join lease_period on lease_period.id=lease_period_id;
