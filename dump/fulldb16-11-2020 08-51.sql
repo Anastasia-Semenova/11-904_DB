@@ -406,23 +406,39 @@ INSERT INTO `service_user_company` (`company_id`, `service_user_id`) VALUES (1, 
 INSERT INTO `service_user_company` (`company_id`, `service_user_id`) VALUES (2, 19);
 INSERT INTO `service_user_company` (`company_id`, `service_user_id`) VALUES (3, 20);
 
+#
+# TABLE STRUCTURE FOR: address
+#
+
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('1','Denmark','Vermont','Tabithaborough','Rebekah Common','6','2');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('2','Cape Verde','Colorado','Gaylordborough','Stoltenberg Key','4','4');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('3','Northern Mariana Islands','NewHampshire','North Judgeton','Grimes Roads','5','9');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('4','Bosnia and Herzegovina','Montana','North Rickytown','Langworth Junction','1','7');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('5','Syrian Arab Republic','Florida','New Jazlynhaven','Marquardt Fort','3','4');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('6','Cape Verde','Missouri','Raphaelleport','Carlo Lodge','5','6');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('7','Guadeloupe','Utah','Greenfelderfurt','Rosenbaum Wall','8','3');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('8','Canada','Michigan','South Scarlettshire','Okuneva Extensions','3','1');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('9','Antarctica (the territory South of 60 deg S)','RhodeIsland','Port Cassandra','Bechtelar Key','4','9');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('10','France','Illinois','South Malcolmtown','Crystel Lane','8','4');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('11','Tuvalu','Maine','Coleburgh','Dovie Forest','4','3');
+INSERT INTO `address` (`id`, `country`, `region`,  `district`, `street`, `building`, `premises`) VALUES ('12','Cambodia','Nebraska','Kennamouth','Heidenreich Roads','1','1'); 
 
 #
 # TABLE STRUCTURE FOR: place_of_rent
 #
 
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (1, 'aut', 1, '660 Stokes Ridge Suite 011\nSouth Logan, CT 52075');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (2, 'impedit', 2, '30554 Torphy Port Apt. 545\nLake Medaburgh, KY 96151');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (3, 'soluta', 3, '994 Morar Street Suite 742\nAbdullahmouth, MD 43442');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (4, 'non', 1, '8425 Ullrich Course\nNorth Connie, CT 50578-9759');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (5, 'qui', 2, '464 Blaise Wells Apt. 304\nBraunfurt, MO 23680-6507');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (6, 'nesciunt', 3, '903 Lauriane Burgs Suite 647\nNoelfort, DE 90707');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (7, 'nostrum', 1, '29583 Birdie Inlet Suite 744\nPort Gaston, MN 04419');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (8, 'harum', 2, '38378 O\'Hara Gateway Suite 119\nPort Judson, WY 91941');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (9, 'tempora', 3, '2010 Andy Junctions\nHickleville, WI 08553-0271');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (10, 'totam', 1, '195 Dach Pines\nLake Annamaeton, SD 62721');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (11, 'veritatis', 2, '3992 Otto Street Apt. 813\nBeerland, GA 37736');
-INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `place_of_rent_address`) VALUES (12, 'voluptas', 3, '3977 Hoppe Estate\nLarkinside, GA 58524-5118');
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (1, 'aut', 1, 1);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (2, 'impedit', 2, 2);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (3, 'soluta', 3, 3);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (4, 'non', 1, 4);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (5, 'qui', 2, 5);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (6, 'nesciunt', 3, 6);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (7, 'nostrum', 1, 7);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (8, 'harum', 2, 8);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (9, 'tempora', 3, 9);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (10, 'totam', 1, 10);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (11, 'veritatis', 2, 11);
+INSERT INTO `place_of_rent` (`id`, `place_of_rent_name`, `company_id`, `address_id`) VALUES (12, 'voluptas', 3, 12);
 
 
 #
